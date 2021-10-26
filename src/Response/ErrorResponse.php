@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Symfona\Specification\Api\Response;
+namespace Symfona\Api\Specification\Response;
 
 final class ErrorResponse
 {

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Symfona\Specification\Api\Response;
+namespace Symfona\Api\Specification\Response;
 
-use Symfona\Specification\Api\Response\Validation\Error;
+use Symfona\Api\Specification\Response\Validation\Error;
 
 final class ValidationResponse
 {

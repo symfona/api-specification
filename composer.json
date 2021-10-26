@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Symfona\\Specification\\Api\\": "src"
+            "Symfona\\Api\\Specification\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Symfona\\Specification\\Api\\Tests\\": "tests"
+            "Symfona\\Api\\Specification\\Tests\\": "tests"
         }
     },
     "config": {

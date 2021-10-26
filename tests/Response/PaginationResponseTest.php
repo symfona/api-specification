@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Symfona\Specification\Api\Tests\Response;
+namespace Symfona\Api\Specification\Tests\Response;
 
 use PHPUnit\Framework\TestCase;
-use Symfona\Specification\Api\Response\PaginationResponse;
+use Symfona\Api\Specification\Response\PaginationResponse;
 
 final class PaginationResponseTest extends TestCase
 {
