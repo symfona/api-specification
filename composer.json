@@ -1,9 +1,9 @@
 {
-    "name": "symfona/demo-bundle",
-    "type": "symfony-bundle",
-    "description": "Symfony Bundle Template",
-    "keywords": ["php", "symfony", "bundle", "demo", "template"],
-    "homepage": "https://github.com/symfona/demo-bundle",
+    "name": "symfona/api-specification",
+    "type": "library",
+    "description": "PHP API Specification",
+    "keywords": ["php", "api", "specification"],
+    "homepage": "https://github.com/symfona/api-specification",
     "license": "MIT",
     "authors": [
         {
@@ -12,23 +12,20 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "symfony/framework-bundle": "^5.3"
+        "php": "^8.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12",
-        "phpunit/phpunit": "^9.5",
-        "symfony/browser-kit": "^5.3",
-        "symfony/yaml": "^5.3"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "Symfona\\DemoBundle\\": "src"
+            "Symfona\\Specification\\Api\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Symfona\\DemoBundle\\Tests\\": "tests"
+            "Symfona\\Specification\\Api\\Tests\\": "tests"
         }
     },
     "config": {
