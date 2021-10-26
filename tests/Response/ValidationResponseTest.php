@@ -27,11 +27,11 @@ final class ValidationResponseTest extends TestCase
     {
         yield [
             new Error('name',
-                new ErrorResponse('validation.name.not_blank'),
+                new ErrorResponse('validation.name.not_blank', []),
             ),
             new Error('email',
                 new ErrorResponse('validation.name.length', ['min' => 3]),
-                new ErrorResponse('validation.name.exists'),
+                new ErrorResponse('validation.name.exists', []),
             ),
         ];
     }
