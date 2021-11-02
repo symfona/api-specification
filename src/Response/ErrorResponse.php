@@ -4,7 +4,7 @@ namespace Symfona\Api\Specification\Response;
 
 final class ErrorResponse
 {
-    public function __construct(public readonly string $message, public readonly array $parameters)
+    public function __construct(public readonly string $message, public readonly array $parameters = [])
     {
     }
 }

@@ -4,7 +4,7 @@ namespace Symfona\Api\Specification\Response;
 
 final class PaginationResponse
 {
-    public function __construct(public readonly array $items, public readonly int $count)
+    public function __construct(public readonly int $count, public readonly array $items)
     {
     }
 }

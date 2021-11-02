@@ -8,23 +8,23 @@ use Symfona\Api\Specification\Response\PaginationResponse;
 final class PaginationResponseTest extends TestCase
 {
     /**
-     * @param array $items
      * @param int   $count
+     * @param array $items
      *
      * @dataProvider dataProvider
      */
-    public function testPaginationResponse(array $items, int $count): void
+    public function testPaginationResponse(int $count, array $items): void
     {
-        $response = new PaginationResponse($items, $count);
+        $response = new PaginationResponse($count, $items);
 
-        $this->assertSame($items, $response->items);
         $this->assertSame($count, $response->count);
+        $this->assertSame($items, $response->items);
     }
 
     public function dataProvider(): \Generator
     {
-        yield ['items' => [], 'count' => 0];
-        yield ['items' => [1, 2, 3], 'count' => 100500];
-        yield ['items' => [['name' => 'one'], 'name' => 'two'], 'count' => 2];
+        yield ['count' => 0, 'items' => []];
+        yield ['count' => 100500, 'items' => [1, 2, 3]];
+        yield ['count' => 2, 'items' => [['name' => 'one'], 'name' => 'two']];
     }
 }
